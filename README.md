@@ -1,1 +1,1 @@
-![cover](images/cover-pipex.png)
+![cover](images/cover-pyimmersion.png)
