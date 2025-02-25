@@ -12,7 +12,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-num = input("Give me a number: ")
-rnum = round(float(num))
+num = float(input("Give me a number: "))
+
+rnum = int(num) + (1 if num > int(num) else 0)
 
 print(rnum)

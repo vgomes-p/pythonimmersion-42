@@ -15,7 +15,7 @@
 num1 = int(input("Give me the first number: "))
 num2 = int(input("Give me the first number: "))
 
-print(f'''Thank you!
+print(f'''Thank you!s
 {num1} + {num2} = {num1 + num2}
 {num1} - {num2} = {num1 - num2}
 {num1} / {num2} = {num1 / num2}
