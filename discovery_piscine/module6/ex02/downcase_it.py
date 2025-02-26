@@ -3,18 +3,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    parameters.py                                      :+:      :+:    :+:    #
+#    downcase_it.py                                     :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: vgomes-p <vgomes-p@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/02/25 13:10:00 by vgomes-p          #+#    #+#              #
-#    Updated: 2025/02/25 13:10:00 by vgomes-p         ###   ########.fr        #
+#    Created: 2025/02/26 16:40:48 by vgomes-p          #+#    #+#              #
+#    Updated: 2025/02/26 16:40:50 by vgomes-p         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 import sys
 
-num_args = len(sys.argv) - 1
+args = sys.argv[1:2]
 
+fargs = str(args).replace('[', '').replace(']', '').replace("'", "").lower()
 
-print(f'Number of parameters: {num_args}')
+print(f'The first parameter downcased is: {fargs}')
