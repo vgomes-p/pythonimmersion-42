@@ -26,7 +26,7 @@ seen = set()
 for pos1 in modified_array:
 	if pos1 not in seen:
 		seen.add(pos1)
-		non_dup_array.ap
+		non_dup_array.append(pos1)
 
 
 non_dup_array = "{" + ", ".join(map(str, non_dup_array)) + "}"
