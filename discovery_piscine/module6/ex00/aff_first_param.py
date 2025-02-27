@@ -18,5 +18,7 @@ args = sys.argv[1:2]
 
 fargs = str(args).replace('[', '').replace(']', '').replace("'", "")
 
-
-print(f'The first parameter is: {fargs}')
+if len(sys.argv) - 1 <= 0:
+	print('none')
+else:
+	print(f'The first parameter is: {fargs}')

@@ -18,4 +18,7 @@ args = sys.argv[1:2]
 
 fargs = str(args).replace('[', '').replace(']', '').replace("'", "").lower()
 
-print(f'The first parameter downcased is: {fargs}')
+if len(sys.argv) - 1 <= 0:
+	print("none")
+else:
+	print(f'The first parameter downcased is: {fargs}')

@@ -16,7 +16,7 @@ import sys
 
 num_args = len(sys.argv) - 1
 
-if int(num_args) < 2:
+if int(num_args) != 2:
 	print('none')
 else:
 	first_param = sys.argv[1]

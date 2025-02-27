@@ -17,7 +17,7 @@ import sys
 rev_args = sys.argv[1:][::-1]
 num_args = len(sys.argv) - 1
 
-if int(num_args) <= 0:
+if int(num_args) <= 1:
 	print('none')
 else:
 	print(f'Your parameter reversed are:')
