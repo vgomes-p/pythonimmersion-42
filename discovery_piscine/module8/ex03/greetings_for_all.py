@@ -16,8 +16,8 @@ class PyImmersion:
 	@staticmethod
 	def greetings(entry=None):
 		if entry is None or entry == "":
-			print(f"noble stranger.")
-		elif isinstance(entry, str) and entry.isnumeric():
+			print(f"Hello, noble stranger.")
+		elif isinstance(entry, int) or (isinstance(entry, str) and entry.isdigit()):
 			print(f"It was not a name")
 		else:
 			print(f"Hello, {entry}.")

@@ -23,7 +23,6 @@ class PyImmersion:
 	def enlarge(pos):
 		print(pos.ljust(8, 'z'))
 
-
 if len(sys.argv) - 1 <= 0:
 	print("none")
 else:

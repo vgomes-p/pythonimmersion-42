@@ -13,12 +13,18 @@
 # **************************************************************************** #
 
 class PyImmersion:
-	@staticmethod
-	def add_one(param):
-		param += 1
-		return param
+	def __init__(self, var):
+		self.var = var
+
+	def add_one(self):
+		self.var += 1
+		return self.var
+	
+	def printer(self):
+		var0 = self.add_one()
+		print(var0)
 
 var = 42
 print(var)
-PyImmersion.add_one(var)
-print(var)
+var1 = PyImmersion(var)
+var1.printer()
