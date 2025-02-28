@@ -16,7 +16,7 @@ class PyImmersion:
 	@staticmethod
 	def average(classgrades):
 		all_grade = 0
-		for name, grade in classgrades.items():
+		for _, grade in classgrades.items():
 			all_grade = all_grade + int(grade)
 		if not classgrades:
 			return 0
@@ -38,5 +38,5 @@ class_3C = {
 "stephanie": 13
 }
 
-print(f"Average for class 3B: {PyImmersion.average(class_3B)}")
-print(f"Average for class 3C: {PyImmersion.average(class_3C)}")
+print(f"Average for class 3B: {PyImmersion.average(class_3B)}.")
+print(f"Average for class 3C: {PyImmersion.average(class_3C)}.")

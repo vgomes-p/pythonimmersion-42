@@ -19,7 +19,7 @@ class PyImmersion:
 		for nick, info in sorted_famous:
 			name = info["name"]
 			year = info["date_of_birth"]
-			print(f"{name} is a great scientist born in {year}")
+			print(f"{name} is a great scientist born in {year}.")
 
 women_scientists = {
 "ada": { "name": "Ada Lovelace", "date_of_birth": "1815" },
